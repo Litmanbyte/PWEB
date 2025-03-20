@@ -1,0 +1,86 @@
+/* Definições básicas para a div */
+.color-box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.color-box {
+    background-color: white;
+}
+
+#color-text {
+    color: white;
+    font-size: 2rem;
+}
+
+@media (max-width: 420px) {
+    .color-box {
+        background-color: gray;
+    }
+
+    #color-text {
+        content: 'Cinza';
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px) {
+    .color-box {
+        background-color: orange;
+    }
+
+    #color-text::before{
+        content: 'Laranja';
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .color-box {
+        background-color: pink;
+    }
+
+    #color-text::before {
+        content: 'Rosa';
+    }
+} 
+
+@media (min-width: 1025px) and (max-width: 1080px) {
+    .color-box {
+        background-color: red;
+    }
+
+    #color-text::before {
+        content: 'Vermelho';
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px) {
+    .color-box {
+        background-color: blue;
+    }
+
+    #color-text::before {
+        content: 'Azul';
+    }
+}
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .color-box {
+        background-color: yellow;
+    }
+
+    #color-text ::before{
+        content: 'Amarelo';
+    }
+}
+@media (min-width: 1921px){
+    .color-box {
+        background-color: green;
+    }
+
+    #color-text ::before{
+        content: 'Verde';
+    }
+}
