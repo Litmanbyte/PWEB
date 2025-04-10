@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE9 - Funções JavaScript</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .exercicio { margin-bottom: 30px; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        h2 { color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        button { background-color: #3498db; color: white; border: none; padding: 8px 15px; cursor: pointer; }
+        button:hover { background-color: #2980b9; }
+        input { padding: 8px; margin: 5px 0; }
+        .resultado { margin-top: 10px; padding: 10px; background-color: #f8f9fa; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>JavaScript – Exercício: Funções – ATIVIDADE9</h1>
+
+    <div class="exercicio">
+        <h2>1. Maior de Três Números</h2>
+        <input type="number" id="num1a" placeholder="Número 1">
+        <input type="number" id="num1b" placeholder="Número 2">
+        <input type="number" id="num1c" placeholder="Número 3">
+        <button onclick="exercicio1()">Calcular</button>
+        <div id="resultado1" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+        <h2>2. Ordenar Três Números</h2>
+        <input type="number" id="num2a" placeholder="Número 1">
+        <input type="number" id="num2b" placeholder="Número 2">
+        <input type="number" id="num2c" placeholder="Número 3">
+        <button onclick="exercicio2()">Ordenar</button>
+        <div id="resultado2" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+        <h2>3. Verificar Palíndromo</h2>
+        <input type="text" id="palavra" placeholder="Digite uma palavra">
+        <button onclick="exercicio3()">Verificar</button>
+        <div id="resultado3" class="resultado"></div>
+    </div>
+
+    <div class="exercicio">
+        <h2>4. Verificar Triângulo</h2>
+        <input type="number" id="ladoA" placeholder="Lado A">
+        <input type="number" id="ladoB" placeholder="Lado B">
+        <input type="number" id="ladoC" placeholder="Lado C">
+        <button onclick="exercicio4()">Verificar</button>
+        <div id="resultado4" class="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
